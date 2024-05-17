@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anomaly Detection</title>
+</head>
+<body>
+    <h1>Anomaly Detection</h1>
+    <form action="/predict" method="post">
+        <label for="duration">Duration:</label>
+        <input type="text" id="duration" name="duration" required><br><br>
+
+        <label for="protocol_type">Protocol Type:</label>
+        <input type="text" id="protocol_type" name="protocol_type" required><br><br>
+
+        <label for="service">Service:</label>
+        <input type="text" id="service" name="service" required><br><br>
+
+        <label for="src_bytes">Source Bytes:</label>
+        <input type="text" id="src_bytes" name="src_bytes" required><br><br>
+
+        <label for="dst_bytes">Destination Bytes:</label>
+        <input type="text" id="dst_bytes" name="dst_bytes" required><br><br>
+
+        <label for="count">Count:</label>
+        <input type="text" id="count" name="count" required><br><br>
+
+        <label for="srv_count">Service Count:</label>
+        <input type="text" id="srv_count" name="srv_count" required><br><br>
+
+        <label for="serror_rate">Serror Rate:</label>
+        <input type="text" id="serror_rate" name="serror_rate" required><br><br>
+
+        <label for="srv_serror_rate">Service Serror Rate:</label>
+        <input type="text" id="srv_serror_rate" name="srv_serror_rate" required><br><br>
+
+        <!-- Add more input fields for other network properties as needed -->
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
